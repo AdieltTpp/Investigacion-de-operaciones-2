@@ -2,69 +2,334 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Sitio sobre Investigación de Operaciones">
+    <meta name="keywords" content="Investigación de Operaciones, optimización, simulación">
+    <meta name="author" content="Adiel Jafet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investigación de operaciones</title>
+    <title>Investigación de Operaciones</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-    <h1 class="Titulo_encabezado">Investigación de operaciones</h1>
+
+<header>
+    <h1>Investigación de Operaciones</h1>
+    
     <nav>
-        <table class="nav_links">
+        <table border="1">
             <tr>
-                <td><a href="inicio">Inicio</a></td>
-                <td><a href="Temas">Temas</a></td>
-                <td><a href="acerca">Acerca de</a></td>
-                <td><a href="contacto">Contacto</a></td>
+                <td><a href="#inicio">Inicio</a></td>
+                <td><a href="#temas">Temas</a></td>
+                <td><a href="#acerca">Acerca de</a></td>
+                <td><a href="#contacto">Contacto</a></td>
             </tr>
         </table>
     </nav>
+</header>
 
+<main>
+
+<section id="inicio">
+    <h2>¿Qué es la Investigación de Operaciones?</h2>
+
+    <p>
+        La <strong>investigación de operaciones</strong> es una disciplina que se encarga de aplicar 
+        <em>métodos analíticos avanzados</em> para ayudar a tomar mejores decisiones.
+    </p>
+
+    <p>
+        Utiliza herramientas como <mark>modelos matemáticos</mark>, algoritmos y análisis de datos 
+        para resolver problemas complejos en diferentes áreas.
+    </p>
+
+    <figure>
+        <img src="Image/investigacion operaciones.jpg" alt="Investigación de operaciones" width="200">
+        <figcaption>Aplicación de modelos matemáticos</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/Grafo.png" alt="Grafo" width="200">
+        <figcaption>Ejemplo de grafos</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/logistica.webp" alt="Logística" width="200">
+        <figcaption>Optimización logística</figcaption>
+    </figure>
+
+</section>
+
+<section id="temas">
+
+<header>
+    <h2>Temas Principales de la Investigación de Operaciones</h2>
+    <p>Estos temas se basan en técnicas matemáticas y modelos utilizados para la toma de decisiones óptimas en sistemas complejos.</p>
+</header>
+
+<article>
+    <header>
+        <h3>Optimización</h3>
     </header>
-    <main>
-        <section class="contenido">
-            <h2>¿Qué es la Investigación de Operaciones?</h2>
-            <p>La investigación de operaciones es una disciplina que se encarga de aplicar métodos analíticos avanzados para ayudar a tomar mejores decisiones. En este sitio, exploraremos los conceptos fundamentales, técnicas y aplicaciones de la investigación de operaciones en diversos campos.</p>
-            <p>Desde la optimización de recursos hasta la gestión de cadenas de suministro, la investigación de operaciones ofrece herramientas poderosas para resolver problemas complejos y mejorar la eficiencia en las organizaciones.</p>
-            <img src="investigacion operaciones.jpg" alt="investigación de operaciones" class="imagen_contenido">
-            <img src="Grafo.png" alt="grafo" class="imagen_contenido">
-            <img src="logistica.webp" alt="logistica" class="imagen_contenido">
-        </section>
-    </main>
-        <section>
-            <h2>Temas Destacados</h2>
-            <ul>
-                <li><a href="optimizacion">Optimización</a></li>
-                <li><a href="simulacion">Simulación</a></li>
-                <li><a href="teoria_de_juegos">Teoría de Juegos</a></li>
-                <li><a href="programacion_lineal">Programación Lineal</a></li>
-            </ul>
-        </section>
-        <Section>
-            <h2>Recursos Adicionales</h2>
-            <p>Si deseas profundizar en la investigación de operaciones, aquí tienes algunos recursos adicionales:</p>
-            <ul>
-                <li><a href="">Libro de Investigación de Operaciones</a></li>
-                <li><a href="">Artículos Científicos</a></li>
-                <li><a href="">Canal de YouTube sobre Investigación de Operaciones</a></li>
-            </ul>
-        </Section>
-    <form action="">
-        <label for="email">Suscríbete a nuestro boletín:</label>
-        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
-        <button type="submit">Suscribirse</button><br><br>
-        <label for="telefono">Ingresa tu número de teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono">
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
-        <input type="button" value="Haz clic aquí" onclick="alert('¡Gracias por tu interés en la investigación de operaciones!')">
 
-    </form>
+    <p>
+        La optimización es el proceso de encontrar la mejor solución posible dentro de un conjunto de alternativas, 
+        buscando maximizar beneficios o minimizar costos.
+    </p>
+
+    <p>
+        Se basa en modelos matemáticos donde se define una <strong>función objetivo</strong> y un conjunto de restricciones 
+        que representan los recursos disponibles.
+    </p>
+
+    <ul>
+        <li>Maximización de utilidades</li>
+        <li>Minimización de costos</li>
+        <li>Optimización de recursos limitados</li>
+    </ul>
+
+    <aside>
+        <p>
+            La optimización es fundamental en áreas como logística, finanzas e ingeniería industrial.
+        </p>
+    </aside>
+
     <footer>
-        <p>&copy; 2026 Adiel Jafet Poot Pech - Ingeniero en sistemas computacionales. </p>
+        <p><small>Base de muchos métodos como programación lineal y dinámica.</small></p>
     </footer>
-    
-</body>
+</article>
 
+
+<article>
+    <header>
+        <h3>Simulación</h3>
+    </header>
+
+    <p>
+        La simulación es una técnica que permite representar un sistema real mediante modelos computacionales 
+        para analizar su comportamiento bajo diferentes condiciones.
+    </p>
+
+    <p>
+        Es especialmente útil cuando los sistemas son demasiado complejos para resolverse con modelos matemáticos exactos.
+    </p>
+
+    <ol>
+        <li>Definir el sistema real</li>
+        <li>Construir el modelo</li>
+        <li>Ejecutar simulaciones</li>
+        <li>Analizar resultados</li>
+    </ol>
+
+    <aside>
+        <p>
+            La simulación puede incluir incertidumbre y variables aleatorias para representar escenarios reales.
+        </p>
+    </aside>
+
+    <footer>
+        <p><small>Aplicaciones: tráfico, producción, sistemas de colas.</small></p>
+    </footer>
+</article>
+
+
+<article>
+    <header>
+        <h3>Teoría de Juegos</h3>
+    </header>
+
+    <p>
+        La teoría de juegos estudia la toma de decisiones en situaciones donde múltiples participantes 
+        interactúan y sus decisiones afectan a los demás.
+    </p>
+
+    <p>
+        Se utiliza para analizar estrategias competitivas y cooperativas entre individuos o empresas.
+    </p>
+
+    <dl>
+        <dt>Estrategia</dt>
+        <dd>Plan de acción de un jugador</dd>
+
+        <dt>Equilibrio de Nash</dt>
+        <dd>Situación donde ningún jugador mejora cambiando su decisión</dd>
+    </dl>
+
+    <aside>
+        <p>
+            Es ampliamente utilizada en economía, política y negocios.
+        </p>
+    </aside>
+
+    <footer>
+        <p><small>Ejemplo: competencia entre empresas.</small></p>
+    </footer>
+</article>
+
+
+<article>
+    <header>
+        <h3>Programación Lineal</h3>
+    </header>
+
+    <p>
+        La programación lineal es una técnica matemática utilizada para optimizar una función lineal 
+        sujeta a restricciones lineales.
+    </p>
+
+    <p>
+        Su objetivo es encontrar la mejor solución posible considerando recursos limitados y condiciones específicas.
+    </p>
+
+    <ul>
+        <li>Función objetivo</li>
+        <li>Variables de decisión</li>
+        <li>Restricciones</li>
+        <li>Región factible</li>
+    </ul>
+
+    <aside>
+        <p>
+            La región factible representa todas las soluciones posibles que cumplen las restricciones.
+        </p>
+    </aside>
+
+    <footer>
+        <p><small>Se resuelve con métodos como el simplex.</small></p>
+    </footer>
+</article>
+
+
+<article>
+    <header>
+        <h3>Programación Dinámica</h3>
+    </header>
+
+    <p>
+        La programación dinámica es una técnica que resuelve problemas complejos dividiéndolos en subproblemas más pequeños.
+    </p>
+
+    <p>
+        Se utiliza cuando un problema presenta subestructuras óptimas y subproblemas repetidos.
+    </p>
+
+    <ul>
+        <li>Descomposición del problema</li>
+        <li>Uso de memoria (memorización)</li>
+        <li>Optimización por etapas</li>
+    </ul>
+
+    <aside>
+        <p>
+            Fue desarrollada por Richard Bellman en la década de 1950.
+        </p>
+    </aside>
+
+    <footer>
+        <p><small>Ejemplo: rutas más cortas y problemas secuenciales.</small></p>
+    </footer>
+</article>
+
+
+<footer>
+    <p>
+        La investigación de operaciones integra múltiples técnicas matemáticas para resolver problemas 
+        reales en organizaciones y sistemas complejos.
+    </p>
+</footer>
+
+</section>
+
+<section id="acerca">
+    <h2>Acerca de</h2>
+
+    <p>
+        Este sitio fue desarrollado por <b>Adiel Jafet Poot Pech</b> como parte de su formación 
+        en <i>Ingeniería en Sistemas Computacionales</i>.
+    </p>
+
+    <p>
+        El objetivo es proporcionar información clara y estructurada sobre la investigación 
+        de operaciones.
+    </p>
+
+    <details>
+        <summary>Más información</summary>
+        <p>Incluye ejemplos prácticos, teoría y aplicaciones en empresas.</p>
+    </details>
+
+</section>
+
+<section>
+    <h2>Recursos Adicionales</h2>
+
+    <ul>
+        <li><a href="#">Libro de Investigación de Operaciones</a></li>
+        <li><a href="#">Artículos Científicos</a></li>
+        <li><a href="#">Canal de YouTube</a></li>
+    </ul>
+
+    <h3>Tabla de comparación</h3>
+    <table border="1">
+        <tr>
+            <th>Método</th>
+            <th>Uso</th>
+            <th>Ejemplo</th>
+        </tr>
+        <tr>
+            <td>Optimización</td>
+            <td>Mejorar recursos</td>
+            <td>Rutas de transporte</td>
+        </tr>
+        <tr>
+            <td>Simulación</td>
+            <td>Predecir escenarios</td>
+            <td>Tráfico</td>
+        </tr>
+    </table>
+
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form action="">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="email">Correo:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+
+            <label>Intereses:</label><br>
+            <input type="checkbox"> Optimización<br>
+            <input type="checkbox"> Simulación<br>
+            <input type="checkbox"> Logística<br><br>
+
+            <label>Tipo de usuario:</label><br>
+            <input type="radio" name="tipo"> Estudiante<br>
+            <input type="radio" name="tipo"> Profesional<br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+
+</section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 Adiel Jafet Poot Pech</p>
+    <p><small>Todos los derechos reservados</small></p>
+</footer>
+
+</body>
 </html>
