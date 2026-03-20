@@ -1,12 +1,3 @@
-/* ================================================
-   styles.css — Investigación de Operaciones
-   ================================================ */
-
-
-/* ------------------------------------------------
-   RESET: quita márgenes y rellenos por defecto
-   del navegador para que todo se vea igual
------------------------------------------------- */
 * {
     box-sizing: border-box;
     margin: 0;
