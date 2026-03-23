@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#inicio p{
+    background-color: rgb(75, 88, 174);
+    border-style: dashed solid dotted double;
+    border-color: blue red green yellow;
+    border-width: 5px 10px 15px 20px;
+    color: white;
+}
+#header{
+    background-color: rgb(5, 23, 142);
+    width: 100%;
+    padding: 1rem 0px  0.0rem 0px;
+    color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .8)
+}
+h1{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    font-family: "Oxanium", sans-serif;
+}
+h2{
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+    border-bottom: 5px dotted #001aff6c;
+    margin-bottom: 1%;
+}
+h3{
+    margin: 1rem;
+}
+body{
+    font-family:sans-serif;
+}
+
+nav table{
+    background-color: rgb(34, 54, 184);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: .5rem;
+    align-items: center;
+    width: 100%;
+}
+tr{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+section{
+    border: 1px solid #00000041;     
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
+    margin: 2%;
+    padding: 20px;
+    background-color: white;
+}
+li{
+    text-align: left;
+}
+img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+        border: 1px solid white;
+    box-shadow: 0px 0px 5px rgba(9, 149, 200, 0.888);
+}
