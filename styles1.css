@@ -5,58 +5,65 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 40px 0;
+    background-image: url('Image/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #1a1a2e;
-    line-height: 1.6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f4;
     min-height: 100vh;
-    padding-bottom: 80px;
 }
 
 #header {
-    background-color: rgb(5, 23, 142);
-    width: 100%;
-    padding: 1.5rem 2rem;
-    color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    font-family: "Oxanium", sans-serif;
+    background-color: rgba(5, 23, 142, 0.9);
+    border: 4px solid rgb(50, 54, 139);
+    border-radius: 8px;
+    margin: 20px;
+    padding: 25px;
+    width: calc(100% - 40px);
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: white;
 }
 
 h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+    font-family: "Oxanium", sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 nav table {
     width: auto;
+    border-collapse: collapse;
 }
 
 nav tr {
     display: flex;
-    gap: 1.5rem;
+    gap: 10px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    transition: 0.3s;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+    background: rgba(255,255,255,0.1);
+    border-bottom: 2px solid #bfdbfe;
 }
 
 main {
@@ -64,162 +71,154 @@ main {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
     padding: 20px 0;
 }
 
 section {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    padding: 30px;
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
 }
 
 h2 {
-    font-size: 1.8rem;
     color: rgb(5, 23, 142);
-    padding-bottom: 10px;
-    border-bottom: 3px solid rgba(5, 23, 142, 0.3);
+    font-size: 1.8rem;
     margin-bottom: 20px;
+    border-left: 8px solid rgb(5, 23, 142);
+    padding-left: 15px;
 }
 
 #inicio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
 #inicio p {
-    width: 100%;
+    grid-column: 1 / -1;
     font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 figure {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 figure:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 img {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
-#temas {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 
 article {
-    display: flex;
-    flex-direction: column;
-    background-color: #f8faff;
-    border-left: 5px solid rgb(5, 23, 142);
+    background: #f8fafc;
+    margin-bottom: 20px;
     padding: 20px;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
 }
 
 article aside {
-    background-color: #dbeafe;
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
     padding: 15px;
     margin: 15px 0;
     font-style: italic;
-    color: #1e3a8a;
-    border-radius: 4px;
-}
-
-#contacto form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 fieldset {
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    border: 2px solid #cbd5e1;
     padding: 25px;
-    width: 100%;
-    max-width: 600px;
+    border-radius: 8px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+input[type="text"], input[type="email"], input[type="tel"], textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #cbd5e1;
     border-radius: 4px;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 12px 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 input[type="submit"] {
-    background-color: rgb(5, 23, 142);
+    background: rgb(5, 23, 142);
     color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 body > footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222;
+    background: #111;
     color: white;
-    padding: 15px;
+    width: 100%;
+    padding: 30px;
     text-align: center;
-    z-index: 2000;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    margin-top: 40px;
 }
 
+/* MEDIA QUERIES - DISEÑO RESPONSIVO */
+
 @media (max-width: 768px) {
-    #header {
-        flex-direction: column;
-        text-align: center;
-    }
+    body { padding: 10px 0; }
     
+    #header {
+        width: 95%;
+        padding: 15px;
+    }
+
     nav tr {
-        gap: 0.5rem;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    h1 {
-        margin-bottom: 10px;
+    .nav-link {
+        padding: 8px 12px;
+        font-size: 0.9rem;
     }
+
+    section { padding: 20px; }
 
     #inicio {
-        flex-direction: column;
-    }
-
-    figure {
-        width: 100%;
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    section {
-        padding: 15px;
-    }
+    h1 { font-size: 1.5rem; }
     
+    nav table { width: 100%; }
+    
+    nav tr {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     .nav-link {
-        font-size: 0.9rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 }
