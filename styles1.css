@@ -63,6 +63,8 @@ section{
     padding: 20px;
     background-color: white;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 h2{
@@ -96,6 +98,7 @@ article > p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -135,6 +138,68 @@ article aside {
     text-align: left;
     font-style: italic;
     color: #1e3a8a;
+}
+
+#temas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#temas article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#temas article ul,
+#temas article ol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#temas article footer{
+    align-self: flex-end;
+}
+
+#temas article:nth-child(2){
+    align-self: center;
+}
+
+#temas article:nth-child(3){
+    align-self: flex-end;
+}
+
+#temas article:nth-child(4){
+    align-self: flex-start;
+}
+
+#temas article:nth-child(5){
+    align-self: center;
+}
+
+#temas > footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto form{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    margin-top: 10px;
 }
 
 footer{
